@@ -17,6 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        routes: {
+          ExtractArgumentsScreen.routeName: (context) =>
+          const ExtractArgumentsScreen(),
+        },
+
+
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
